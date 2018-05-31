@@ -48,13 +48,19 @@ Images processing pipeline:
 * Face to features (local banery pattern histogram + HOG)
 
 ---
+
 Original:
+
 ![alt text](docs/original.jpg "original")
 ---
+
 Training:
+
 ![alt text](docs/training.jpg "training")
 ---
+
 Recognized:
+
 ![alt text](docs/recognized.png "recognized")
 ## Execution process
 1. Add face images using add_person.py
