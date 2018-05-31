@@ -5,7 +5,7 @@ import os
 if __name__ == '__main__':
     model = face_detector.load_model()
 
-    frame = cv2.imread(os.path.join('images', 'original', 'tomas', '0.jpg'), 1)
+    frame = cv2.imread(os.path.join('images', 'original', 'tomas', '8.jpg'), 1)
 
     detected_faces = face_detector.detect_faces_dlib(frame)
 
