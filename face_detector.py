@@ -15,7 +15,7 @@ face_features = face_recognition.FaceFeatures()
 
 
 def pipeline(image, face, features=False):
-    f = cut_face(image, face)
+    f = cut_facxe(image, face)
     f = to_gray(f)
     f = normalize_intensity(f)
     f = resize(f, config.face_size)

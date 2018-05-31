@@ -38,7 +38,24 @@ Files:
 * live_recognition.py, recognize_camera.py, recognize_file.py - performs recognition from live stream, from camera photo or from file
 * align_dlib.py, face_detector.py, face_recognition.py - functions used for face recognition process
 * config.py - configuration parameters
+
+Images processing pipeline:
+* Cut face
+* To gray
+* Normalize intensity
+* Resize
+* Align face
+* Face to features (local banery pattern histogram + HOG)
+
 ---
+Original:
+![alt text](docs/original.jpg "original")
+---
+Training:
+![alt text](docs/training.jpg "training")
+---
+Recognized:
+![alt text](docs/recognized.png "recognized")
 ## Execution process
 1. Add face images using add_person.py
 2. Execute original_to_training.py to get training data

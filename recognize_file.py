@@ -5,7 +5,7 @@ import os
 if __name__ == '__main__':
     model = face_detector.load_model()
 
-    frame = cv2.imread(os.path.join('images', 'original', 'albertas', '0.jpg'), 1)
+    frame = cv2.imread(os.path.join('images', 'original', 'tomas', '0.jpg'), 1)
 
     detected_faces = face_detector.detect_faces_dlib(frame)
 
@@ -18,5 +18,5 @@ if __name__ == '__main__':
 
         cv2.imshow('Face recognition', frame)
 
-        if cv2.waitKey(5000) & 0xFF == 27:
+        if cv2.waitKey(10000) & 0xFF == 27:
             cv2.destroyAllWindows()
